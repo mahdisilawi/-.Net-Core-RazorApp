@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Razor_App1</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/theme/img/favicon.png">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="/theme/css/normalize.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/theme/css/main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/theme/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="/theme/css/fontawesome-all.min.css">
+    <!-- bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="/theme/css/animate.min.css">
+    <!-- Popup CSS -->
+    <link rel="stylesheet" href="/theme/css/magnific-popup.css">
+    <!-- Meanmenu CSS -->
+    <link rel="stylesheet" href="/theme/css/meanmenu.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="/theme/vendor/OwlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="/theme/vendor/OwlCarousel/owl.theme.default.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/theme/style.css">
+    <!-- Modernize js -->
+    <script src="/theme/js/modernizr-3.6.0.min.js"></script>
+    <!--ckeditor link-->
+    <script src="https://cdn.ckeditor.com/ckeditor5/37.1.0/classic/ckeditor.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/37.1.0/classic/translations/fa.js"></script>
+
+</head>
+<body class="sticky-header">
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+    <!-- Preloader Start Here -->
+    <div id="preloader"></div>
+    <!-- Preloader End Here -->
+    <div id="wrapper" class="wrapper">
+        <!-- Add your site or application content here -->
+        <!-- Header Area Start Here -->
+        <header class="has-mobile-menu">
+            <div id="header-middlebar" class="pt--29 pb--29 bg--light border-bootom border-color-accent2">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-4">
+                            <div class="header-action-items">
+                                <ul>
+                                    <li class="item-social-layout2"> <a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li class="item-social-layout2"> <a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li class="item-social-layout2"> <a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li class="item-social-layout2"> <a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <li class="item-social-layout2"> <a href="#"><i class="fas fa-rss"></i></a></li>
+                                    <li class="item-social-layout2"> <a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li class="item-social-layout2"> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center">
+                            <div class="logo-area">
+                                <a asp-page="/Index" class="temp-logo" id="temp-logo">
+                                    <img src="/theme/img/logo-dark.png" alt="logo" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-end">
+                            <div class="header-action-items">
+                                <ul>
+                                    <li class="header-search-box divider-style-border">
+                                        <a href="#header-search" title="جستجو">
+                                            <i class="bi bi-search"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div id="rt-sticky-placeholder"></div>
+    <div id="header-menu" class="header-menu menu-layout1 box-layout-child bg--light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav id="dropdown" class="template-main-menu">
+                        <ul>
+                            <li class="hide-on-mobile-menu">
+                                <a asp-page="/Index">خانه</a>
+                            </li>
+                            <li class="hide-on-mobile-menu">
+                                <a asp-page="/Articles/Index">مدیریت مقاله ها</a>
+                            </li>
+                            <li>
+                                <a href="#">درباره</a>
+                            </li>
+                            <li>
+                                <a href="#">تماس</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+    <!-- Header Area End Here -->
+    <!-- Blog Area Start Here -->
+    @RenderBody()
+    <!-- Blog Area End Here -->
+    <!-- Instagram Start Here -->
+    <section class="instagram-feed-wrap-1">
+        <div class="instagram-feed-title-1"><a href="#"><i class="fab fa-instagram"></i>دنبال کردن ما در اینستاگرام</a></div>
+        <ul class="instagram-feed-figure-1">
+            <li>
+                <a href="#"><img src="/theme/img/social-figure/social-figure39.jpg" alt="Social"></a>
+            </li>
+            <li>
+                <a href="#"><img src="/theme/img/social-figure/social-figure40.jpg" alt="Social"></a>
+            </li>
+            <li>
+                <a href="#"><img src="/theme/img/social-figure/social-figure41.jpg" alt="Social"></a>
+            </li>
+            <li>
+                <a href="#"><img src="/theme/img/social-figure/social-figure42.jpg" alt="Social"></a>
+            </li>
+            <li>
+                <a href="#"><img src="/theme/img/social-figure/social-figure43.jpg" alt="Social"></a>
+            </li>
+            <li>
+                <a href="#"><img src="/theme/img/social-figure/social-figure44.jpg" alt="Social"></a>
+            </li>
+            <li>
+                <a href="#"><img src="/theme/img/social-figure/social-figure45.jpg" alt="Social"></a>
+            </li>
+            <li>
+                <a href="#"><img src="/theme/img/social-figure/social-figure46.jpg" alt="Social"></a>
+            </li>
+        </ul>
+    </section>
+    <!-- Instagram End Here -->
+    <!-- Footer Area Start Here -->
+    <footer class="footer-wrap-layout2">
+        <div class="container">
+            <div class="footer-box-layout2">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="/theme/img/logo-light.png" alt="logo"></a>
+                </div>
+                <ul class="footer-social">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i>259k لایک</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i>480k دنبال کننده</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i>280k دنبال شده</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i>180k مشترک شده</a></li>
+                </ul>
+                <div class="copyright">© 2019 بلاگکسر. همه حقوق محفوظ است.</div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End Here -->
+    <!-- Search Box Start Here -->
+    <div id="header-search" class="header-search">
+        <button type="button" class="close">×</button>
+        <form class="header-search-form">
+            <input type="search" value="" placeholder="در اینجا تایپ کنید........" />
+            <button type="submit" class="search-btn">
+                <i class="flaticon-magnifying-glass"></i>
+            </button>
+        </form>
+    </div>
+    <!-- Search Box End Here -->
+    </div>
+
+
+
+    <!-- jquery-->
+    <script src="/theme/js/jquery-3.3.1.min.js"></script>
+
+    @RenderSection("Scripts",false)
+
+    <!-- Plugins js -->
+    <script src="/theme/js/plugins.js"></script>
+    <!-- Popper js -->
+    <script src="/theme/js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="/theme/js/bootstrap.min.js"></script>
+    <!-- Owl Carousel js -->
+    <script src="/theme/vendor/OwlCarousel/owl.carousel.min.js"></script>
+    <!-- Popup js -->
+    <script src="/theme/js/jquery.magnific-popup.min.js"></script>
+    <!-- Images Loaded js -->
+    <script src="/theme/js/imagesloaded.pkgd.min.js"></script>
+    <!-- Isotop js -->
+    <script src="/theme/js/isotope.pkgd.min.js"></script>
+    <!-- Meanmenu js -->
+    <script src="/theme/js/jquery.meanmenu.min.js"></script>
+    <!-- Smooth Scroll js -->
+    <script src="/theme/js/jquery.smoothscroll.min.js"></script>
+    <!-- Main js -->
+    <script src="/theme/js/main.js"></script>
+
+</body>
+</html>

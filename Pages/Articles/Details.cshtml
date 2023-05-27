@@ -1,0 +1,206 @@
+﻿@page
+@model Razor_App1.Pages.Articles.DetailsModel
+@{
+}
+
+
+
+<!-- Single Blog Banner Start Here -->
+<section class="single-blog-wrap-layout2">
+    <div class="container">
+        <div class="single-blog-box-layout2">
+            <div class="blog-banner">
+                <img src="@Model.Article.Picture" alt="@Model.Article.PictureAlt" title="@Model.Article.PictureTitle" style="width:100%">
+            </div>
+            <div class="single-blog-content">
+                <div class="blog-entry-content">
+                    <ul class="entry-meta meta-color-dark">
+                        <li><i class="fas fa-tag"></i>سفر</li>
+                        <li><i class="fas fa-calendar-alt"></i>@Model.Article.CreateDate.ToShortDateString()</li>
+                        <li><i class="fas fa-user"></i>توسط <a href="#">آرش خادملو</a></li>
+                        <li><i class="far fa-clock"></i>5 دقیقه خواندن</li>
+                    </ul>
+                    <h2 class="item-title">@Model.Article.Title</h2>
+                    <ul class="item-social">
+                        <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i>اشتراک</a></li>
+                        <li><a href="#" class="twitter"><i class="fab fa-twitter"></i>اشتراک</a></li>
+                        <li><a href="#" class="g-plus"><i class="fab fa-google-plus-g"></i>اشتراک</a></li>
+                        <li><a href="#" class="pinterst"><i class="fab fa-pinterest"></i>پین آن</a></li>
+                        <li><a href="#" class="load-more"><i class="fas fa-plus"></i>بیشتر</a></li>
+                    </ul>
+                    <ul class="response-area">
+                        <li><a href="#"><i class="far fa-comment"></i>02</a></li>
+                        <li><a href="#"><i class="far fa-eye"></i>105</a></li>
+                        <li><a href="#"><i class="far fa-heart"></i>225</a></li>
+                        <li><a href="#"><i class="fas fa-share"></i>302</a></li>
+                    </ul>
+                </div>
+                <div class="blog-details">
+                    <p>
+                        @Html.Raw(Model.Article.Body)
+                    </p>
+                </div>
+                <div class="blog-tag">
+                    <ul>
+                        <li class="item-tag">
+                            <i class="fas fa-bookmark"></i>
+                            <a href="#">کاوش,</a>
+                            <a href="#">سفر,</a>
+                            <a href="#">تعطیلات,</a>
+                        </li>
+                        <li class="item-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </li>
+                        <li class="item-respons"><i class="fas fa-heart"></i>1,230</li>
+                    </ul>
+                </div>
+                <div class="blog-author">
+                    <div class="media media-none--xs">
+                        <img src="img/blog/blog212.jpg" alt="Author" class="media-img-auto">
+                        <div class="media-body">
+                            <h4 class="item-title">آرش خادملو</h4>
+                            <div class="item-subtitle">نویسنده</div>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله.</p>
+                            <ul class="item-social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="related-item">
+                    <div class="section-heading-5 heading-dark">
+                        <h3 class="item-heading">شما همچنین می توانید</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-12">
+                            <div class="blog-box-layout1 text-left">
+                                <div class="item-img">
+                                    <a href="single-blog.html"><img src="img/blog/blog213.jpg" alt="blog"></a>
+                                </div>
+                                <div class="item-content">
+                                    <ul class="entry-meta meta-color-dark">
+                                        <li><i class="fas fa-tag"></i>مد روز</li>
+                                        <li><i class="fas fa-calendar-alt"></i>19 اسفند 17</li>
+                                    </ul>
+                                    <h5 class="item-title">
+                                        <a href="single-blog.html">
+                                            چگونه فرم جزیره
+                                            رودخانه
+                                            و سنگها
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-12">
+                            <div class="blog-box-layout1 text-left">
+                                <div class="item-img">
+                                    <a href="single-blog.html"><img src="img/blog/blog214.jpg" alt="blog"></a>
+                                </div>
+                                <div class="item-content">
+                                    <ul class="entry-meta meta-color-dark">
+                                        <li><i class="fas fa-tag"></i>مد روز</li>
+                                        <li><i class="fas fa-calendar-alt"></i>19 اسفند 17</li>
+                                    </ul>
+                                    <h5 class="item-title">
+                                        <a href="single-blog.html">
+                                            چگونه فرم جزیره
+                                            رودخانه
+                                            و سنگها
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-12">
+                            <div class="blog-box-layout1 text-left">
+                                <div class="item-img">
+                                    <a href="single-blog.html"><img src="img/blog/blog215.jpg" alt="blog"></a>
+                                </div>
+                                <div class="item-content">
+                                    <ul class="entry-meta meta-color-dark">
+                                        <li><i class="fas fa-tag"></i>مد روز</li>
+                                        <li><i class="fas fa-calendar-alt"></i>19 اسفند 17</li>
+                                    </ul>
+                                    <h5 class="item-title">
+                                        <a href="single-blog.html">
+                                            چگونه فرم جزیره
+                                            رودخانه
+                                            و سنگها
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-comment">
+                    <div class="section-heading-5 heading-dark">
+                        <h3 class="item-heading">02 نظر</h3>
+                    </div>
+                    <div class="media media-none--xs">
+                        <img src="img/blog/blog216.jpg" alt="Blog Comments" class="img-fluid media-img-auto">
+                        <div class="media-body">
+                            <h4 class="item-title">آرش خادملو</h4>
+                            <div class="item-subtitle">2 دقیقه پیش</div>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله</p>
+                            <a href="#" class="item-btn">پاسخ</a>
+                        </div>
+                    </div>
+                    <div class="media media-none--xs">
+                        <img src="img/blog/blog217.jpg" alt="Blog Comments" class="img-fluid media-img-auto">
+                        <div class="media-body">
+                            <h4 class="item-title">آرش خادملو</h4>
+                            <div class="item-subtitle">2 دقیقه پیش</div>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله</p>
+                            <a href="#" class="item-btn">پاسخ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-form">
+                    <div class="section-heading-5 heading-dark">
+                        <h3 class="item-heading">نوشتن یک نظر</h3>
+                    </div>
+                    <form class="contact-form-box">
+                        <div class="row gutters-15">
+                            <div class="col-md-4 form-group">
+                                <input type="text" placeholder="نام*" class="form-control" name="first_name"
+                                       data-error="Name field is required" required>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <input type="email" placeholder="ایمیل*" class="form-control" name="email"
+                                       data-error="E-mail field is required" required>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <input type="text" placeholder="وبسایت*" class="form-control" name="website"
+                                       data-error="website field is required" required>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="col-12 form-group">
+                                <textarea placeholder="نظرات خود را بنویسید ..." class="textarea form-control"
+                                          name="message" rows="8" cols="20" data-error="Message field is required"
+                                          required></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="col-12 form-group">
+                                <button class="item-btn">ارسال نظر</button>
+                            </div>
+                        </div>
+                        <div class="form-response"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Single Blog Banner End Here -->

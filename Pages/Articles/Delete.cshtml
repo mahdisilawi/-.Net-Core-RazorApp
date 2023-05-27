@@ -1,0 +1,64 @@
+﻿@page
+@model Razor_App1.Pages.Articles.DeleteModel
+@{
+}
+
+
+<section class="blog-wrap-layout9">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="row text-right">
+                    <h3 class="text-danger">
+                        آیا از حذف مقاله زیر  مطمئن هستید؟
+                    </h3>
+                </div>
+                </br>
+
+                <!-- List group-->
+                <ul class="list-group shadow">
+
+                    
+                    
+                        <!-- list group item-->
+                        <li class="list-group-item">
+                            <!-- Custom content-->
+                            <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+                                <div class="media-body order-2 order-lg-1">
+                                <h5 class="mt-0 font-weight-bold mb-2">@Model.Article.Title</h5>
+                                    <p class="font-italic text-muted mb-0 small">
+                                    @Model.Article.ShortDescription
+                                    </p>
+                                    <div class="d-flex align-items-center justify-content-between mt-1">
+                                    <h6 class="font-weight-bold my-2">@Model.Article.CreateDate.ToShortDateString()</h6>
+                                        @*<div class="text-right">
+                                            <button class="btn btn-info">
+                                            <a asp-page="Edit" asp-route-id="Article.Id" class="text-light">ویرایش</a>
+                                            </button>
+                                            <button class="btn btn-danger">
+                                            <a asp-page="Delete" asp-route-id="Article.Id" class="text-light">حذف</a>
+                                            </button>
+                                        </div>*@
+                                    </div>
+                                </div>
+                            <img src="@Model.Article.Picture" alt="@Model.Article.PictureAlt" title="@Model.Article.PictureTitle" width="180" class="ml-lg-5 order-1 order-lg-2">
+                            </div> <!-- End -->
+                        </li> <!-- End -->
+                    
+
+                </ul>
+                <form method="post">
+                    <input asp-for="@Model.Article.Id" type="hidden" />
+                    <div class="row text-right">
+                        <button type="submit" class="btn btn-primary">
+                            حذف مقاله
+                        </button>
+                    </div>
+                </form>
+               
+                <!-- End -->
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,56 @@
+﻿@page
+@model Razor_App1.Pages.Articles.IndexModel
+@{
+}
+
+<section class="blog-wrap-layout9">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="row text-right">
+                    <button class="btn btn-primary">
+                        <a asp-page="./Create" class="text-light">
+                            ایجاد مقاله
+                        </a>
+                    </button>
+                </div>
+                </br>
+
+                <!-- List group-->
+                <ul class="list-group shadow">
+
+                    @foreach (var article in Model.Articles)
+                    {
+                        <!-- list group item-->
+                        <li class="list-group-item">
+                            <!-- Custom content-->
+                            <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+                                <div class="media-body order-2 order-lg-1">
+                                    <h5 class="mt-0 font-weight-bold mb-2">@article.Title</h5>
+                                    <p class="font-italic text-muted mb-0 small">
+                                        @article.ShortDescription
+                                    </p>
+                                    <div class="d-flex align-items-center justify-content-between mt-1">
+                                        <h6 class="font-weight-bold my-2">@article.CreateDate.ToShortDateString()</h6>
+                                        <div class="text-right">
+                                            <button class="btn btn-info">
+                                                <a asp-page="Edit" asp-route-id="@article.Id" class="text-light">ویرایش</a>
+                                            </button>
+                                            <button class="btn btn-danger">
+                                                <a asp-page="Delete" asp-route-id="@article.Id" class="text-light">حذف</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="@article.Picture" alt="@article.PictureAlt" title="@article.PictureTitle" width="180" class="ml-lg-5 order-1 order-lg-2">
+                            </div> <!-- End -->
+                        </li> <!-- End -->
+                    }
+
+                </ul>
+                <!-- End -->
+            </div>
+        </div>
+    </div>
+</section>

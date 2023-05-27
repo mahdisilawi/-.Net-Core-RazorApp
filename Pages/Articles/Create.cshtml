@@ -1,0 +1,85 @@
+﻿@page
+@model Razor_App1.Pages.Articles.CreateModel
+@{
+}
+
+
+<section class="blog-wrap-layout9">
+    <div class="container-fluid px-1 py-5 mx-auto">
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+                <h3>ایجاد مقاله جدید</h3>
+                <p class="blue-text">لطفا اطلاعات مقاله خود را با دقت کامل کنید</p>
+                <div class="card">
+                    <h5 class="text-center mb-4">اطلاعات مقاله را وارد کنید</h5>
+                    <form method="post" class="form-card">
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-12 flex-column d-flex">
+                                <label asp-for="Article.Title" class="form-control-label px-3"></label>
+                                <input asp-for="Article.Title" type="text" placeholder="">
+                                <span asp-validation-for="Article.Title" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-12 flex-column d-flex">
+                                <label asp-for="Article.Picture" class="form-control-label px-3"></label>
+                                <input asp-for="Article.Picture" type="text" placeholder="لینک تصویر مقاله را وارد کنید">
+                                <span asp-validation-for="Article.Picture" class="text-danger" ></span>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex">
+                                <label asp-for="Article.PictureAlt" class="form-control-label px-3"></label>
+                                <input asp-for="Article.PictureAlt" type="text" placeholder="">
+                                <span asp-validation-for="Article.PictureAlt" class="text-danger" ></span>
+                            </div>
+                            <div class="form-group col-sm-6 flex-column d-flex">
+                                <label asp-for="Article.PictureTitle" class="form-control-label px-3"></label>
+                                <input asp-for="Article.PictureTitle" type="text" placeholder="">
+                                <span asp-validation-for="Article.PictureAlt" class="text-danger" ></span>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-12 flex-column d-flex">
+                                <label asp-for="Article.ShortDescription" class="form-control-label px-3"></label>
+                                <textarea asp-for="Article.ShortDescription" rows="3" type="text" placeholder=""> </textarea>
+                                <span asp-validation-for="Article.ShortDescription" class="text-danger" ></span>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-12 flex-column d-flex">
+                                <label asp-for="Article.Body" class="form-control-label px-3"></label>
+                                <textarea id="editor" asp-for="Article.Body" rows="10" type="text" placeholder=""> </textarea>
+                                <span asp-validation-for="Article.Body" class="text-danger" ></span>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end">
+                            <div class="form-group col-sm-6">
+                                <button type="submit" class="btn-block btn-primary">ارسال</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor'), {
+                language: 'fa'
+            })
+            .then(editor => {
+                window.editor = editor;
+            })
+            .catch(err => {
+                console.error(err.stack);
+            });
+    </script>
+}
